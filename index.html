@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Hugo, aluno de Desenvolvimento de Sistemas." />
+  <title>Hugo | Desenvolvimento de Sistemas</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+  <!-- Ícones das tecnologias (Devicon) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Efeitos futuristas de fundo -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Início">H<span>.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#tecnologias" class="nav__link">Tecnologias</a></li>
+          <li><a href="#projetos" class="nav__link">Projetos</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="#contato" class="btn btn--primary nav__cta">Vamos conversar</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PÁGINA INICIAL ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="tag">&lt;/&gt; Portfólio</span>
+          <h1 class="hero__title">Olá, eu sou <span class="text-gradient">Hugo.</span></h1>
+          <h2 class="hero__subtitle" data-typing>Aluno de Desenvolvimento de Sistemas</h2>
+          <p class="hero__text">
+            Estou começando minha jornada na programação e transformando cada
+            linha de código em aprendizado. Aqui você acompanha meus estudos,
+            meus projetos e a minha evolução na área de tecnologia.
+          </p>
+          <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+            <a href="#sobre" class="btn btn--outline">Sobre mim</a>
+          </div>
+        </div>
+
+        <!-- Logotipo em destaque (lado direito) -->
+        <div class="hero__photo reveal">
+          <div class="logo-art" aria-hidden="true">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img">
+              <defs>
+                <radialGradient id="circleGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#2f7bff" stop-opacity="0.35" />
+                  <stop offset="70%" stop-color="#0b1630" stop-opacity="0.9" />
+                  <stop offset="100%" stop-color="#081027" stop-opacity="1" />
+                </radialGradient>
+                <linearGradient id="hGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7cc0ff" />
+                  <stop offset="100%" stop-color="#2f7bff" />
+                </linearGradient>
+              </defs>
+
+              <!-- Círculo atrás da logo -->
+              <circle class="ring ring--a" cx="200" cy="200" r="190" fill="none" stroke="#4da3ff" stroke-opacity="0.35" stroke-dasharray="4 10" />
+              <circle class="ring ring--b" cx="200" cy="200" r="180" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="70 1060" />
+              <circle cx="200" cy="200" r="168" fill="url(#circleGlow)" stroke="#4da3ff" stroke-opacity="0.6" stroke-width="1.5" />
+
+              <!-- Letra H -->
+              <g fill="url(#hGradient)" transform="translate(7 0)">
+                <rect x="112" y="112" width="48" height="176" rx="12" />
+                <rect x="226" y="112" width="48" height="176" rx="12" />
+                <rect x="140" y="178" width="118" height="44" rx="10" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ESTATÍSTICAS ============ -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat card reveal">
+          <strong class="stat__number" data-count="6">0</strong>
+          <span class="stat__label">Tecnologias estudadas</span>
+        </div>
+        <div class="stat card reveal">
+          <strong class="stat__number" data-count="3">0</strong>
+          <span class="stat__label">Projetos desenvolvidos</span>
+        </div>
+        <div class="stat card reveal">
+          <strong class="stat__number">Diária</strong>
+          <span class="stat__label">Dedicação aos estudos</span>
+        </div>
+        <div class="stat card reveal">
+          <!-- Troque "Em curso" pelo seu ano de formação (ex.: 2027) -->
+          <strong class="stat__number">Em curso</strong>
+          <span class="stat__label">Ano de formação</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MIM ============ -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">01 · Sobre</span>
+          <h2 class="section__title">Sobre mim</h2>
+        </div>
+
+        <div class="about card reveal">
+          <p>
+            Sou o Hugo, estudante de Desenvolvimento de Sistemas e iniciante na
+            programação. Estou aprendendo na prática, criando pequenos projetos,
+            resolvendo exercícios de lógica e estudando as ferramentas mais
+            usadas no desenvolvimento web.
+          </p>
+          <p>
+            Meu objetivo é desenvolver minhas habilidades na área de tecnologia,
+            evoluir a cada projeto e, no futuro, construir sistemas e aplicações
+            que resolvam problemas reais.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECNOLOGIAS ============ -->
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">02 · Stack</span>
+          <h2 class="section__title">Tecnologias</h2>
+          <p class="section__desc">Ferramentas que estou estudando e praticando.</p>
+        </div>
+
+        <div class="grid grid--tech">
+          <article class="card tech reveal">
+            <i class="devicon-html5-plain colored tech__icon" aria-hidden="true"></i>
+            <h3>HTML5</h3>
+            <p>Estrutura e semântica das páginas web.</p>
+          </article>
+          <article class="card tech reveal">
+            <i class="devicon-css3-plain colored tech__icon" aria-hidden="true"></i>
+            <h3>CSS3</h3>
+            <p>Estilos, layouts responsivos e animações.</p>
+          </article>
+          <article class="card tech reveal">
+            <i class="devicon-javascript-plain colored tech__icon" aria-hidden="true"></i>
+            <h3>JavaScript</h3>
+            <p>Lógica de programação e interatividade.</p>
+          </article>
+          <article class="card tech reveal">
+            <i class="devicon-bootstrap-plain colored tech__icon" aria-hidden="true"></i>
+            <h3>Bootstrap</h3>
+            <p>Criação rápida de interfaces responsivas.</p>
+          </article>
+          <article class="card tech reveal">
+            <i class="devicon-vuejs-plain colored tech__icon" aria-hidden="true"></i>
+            <h3>Vue.js</h3>
+            <p>Primeiros passos com componentes e reatividade.</p>
+          </article>
+          <article class="card tech reveal">
+            <i class="devicon-github-original tech__icon tech__icon--white" aria-hidden="true"></i>
+            <h3>Git / GitHub</h3>
+            <p>Controle de versão e publicação de projetos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">03 · Projetos</span>
+          <h2 class="section__title">Projetos</h2>
+          <p class="section__desc">Alguns dos projetos que desenvolvi durante meus estudos.</p>
+        </div>
+
+        <div class="grid grid--projects">
+          <article class="card project reveal">
+            <div class="project__thumb" aria-hidden="true">🎮</div>
+            <div class="project__body">
+              <h3>GameZone</h3>
+              <p>Site de jogos desenvolvido com HTML, CSS e Bootstrap.</p>
+              <ul class="chips">
+                <li>HTML</li><li>CSS</li><li>Bootstrap</li>
+              </ul>
+              <!-- Troque o "#" pelo link do projeto no GitHub -->
+              <a href="#" class="project__link" target="_blank" rel="noopener">Ver no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__thumb" aria-hidden="true">🔢</div>
+            <div class="project__body">
+              <h3>Contador Vue.js</h3>
+              <p>Contador interativo com botões e estilos personalizados.</p>
+              <ul class="chips">
+                <li>Vue.js</li><li>JavaScript</li><li>CSS</li>
+              </ul>
+              <a href="#" class="project__link" target="_blank" rel="noopener">Ver no GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="project__thumb" aria-hidden="true">🧠</div>
+            <div class="project__body">
+              <h3>Exercícios JavaScript</h3>
+              <p>Exercícios de lógica de programação e manipulação de arrays.</p>
+              <ul class="chips">
+                <li>JavaScript</li><li>Lógica</li><li>Arrays</li>
+              </ul>
+              <a href="#" class="project__link" target="_blank" rel="noopener">Ver no GitHub →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="tag">04 · Contato</span>
+          <h2 class="section__title">Vamos conversar?</h2>
+          <p class="section__desc">Envie uma mensagem e eu respondo assim que possível.</p>
+        </div>
+
+        <form class="form card reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" />
+            <small class="error" data-error-for="nome"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" />
+            <small class="error" data-error-for="email"></small>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            <small class="error" data-error-for="mensagem"></small>
+          </div>
+
+          <button type="submit" class="btn btn--primary" id="submitBtn">Enviar mensagem</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Hugo. Todos os direitos reservados.</p>
+      <ul class="social">
+        <!-- Substitua os links abaixo pelos seus perfis -->
+        <li><a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
